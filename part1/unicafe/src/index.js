@@ -116,4 +116,4 @@ const App = ({anecdotes}) => {
   )
 }
 
-ReactDOM.render(<App  anecdotes={anecdotes} />, document.getElementById('root'))
+ReactDOM.render(<App  />, document.getElementById('root'))
