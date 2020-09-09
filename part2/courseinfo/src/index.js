@@ -26,39 +26,14 @@ const Parts = ({parts}) =>{
     <ul>
         {parts.map(parts => 
           <li>
-            {parts.name}
+            {parts.name} {parts.exercises}
           </li>
         )}
       </ul>
   </div>
   )
 }
-/*
-const Part1 = (props) =>{
-  return(
-    <p>
-      {props.part1} {props.exercises1}
-    </p>
-    
-  )
-}
-const Part2 = (props) =>{
-  return(
-    <p>
-      {props.part2} {props.exercises2}
-    </p>
-    
-  )
-}
-const Part3 = (props) =>{
-  return(
-    <p>
-      {props.part3} {props.exercises3}
-    </p>
-    
-  )
-}
-*/
+
 const Content = (props) => {
   return(
     <div>     
@@ -74,6 +49,10 @@ const App = () => {
     const course = {
     name: 'Half Stack application development',
     parts: [
+      {
+        name: 'Fundamentals of React',
+        exercises: 10
+      },
       {
         name: 'Fundamentals of React',
         exercises: 10
